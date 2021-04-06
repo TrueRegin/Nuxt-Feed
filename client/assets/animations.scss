@@ -1,0 +1,21 @@
+// Add this in later
+
+@keyframes hover {
+    from,
+    to {
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes pop-in {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}

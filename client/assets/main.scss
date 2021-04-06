@@ -1,0 +1,46 @@
+:root {
+    --gray-1: #222526ff;
+    --gray-2: #313638ff;
+    --gray-3: #4c5457ff;
+    --gray-4: #727e83ff;
+    --gray-5: #bec0c6ff;
+    --gray-6: #e8e9ebff;
+    --gray-7: #f4f5f6ff;
+
+    --primary: #3ac;
+    --primary-dark: #197088;
+    --secondary: #ffd035;
+    --secondary-dark: #8a540e;
+    --tertiary: #8233cc;
+    --tertiary-dark: #451474;
+    --color: #fff;
+    --color-dark: var(--gray-2);
+
+    --background: var(--gray-6);
+    --background-p: var(--primary);
+    --background-s: var(--secondary);
+    --background-t: var(--tertiary);
+    --border-p: var(--gray-2);
+    --border-s: var(--gray-1);
+    --border-t: var(--gray-1);
+}
+
+button {
+    background: var(--background-t);
+    color: var(--color);
+    box-sizing: border-box;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, color 0.25s;
+    transition-timing-function: ease;
+
+    &:hover {
+        background: var(--tertiary-dark);
+    }
+
+    &:focus {
+        color: var(--tertiary);
+        background: var(--color);
+    }
+}

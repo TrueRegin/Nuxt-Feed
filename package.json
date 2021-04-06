@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-feed",
+  "version": "1.0.0",
+  "description": "A template for creating deployment ready websites",
+  "main": "run.ts",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "run:dev": "ts-node ./run.ts --development",
+    "run:prod": "ts-node ./run.ts --production",
+    "run:client": "ts-node ./run.ts --client",
+    "run:server": "ts-node ./run.ts --server",
+    "build": "ts-node ./build.ts -C -S",
+    "build:client": "ts-node ./build.ts -C",
+    "build:server": "ts-node ./build.ts -S",
+    "install-all": "yarn install && ts-node ./init.ts"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^14.14.31",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.7",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.1.0"
+  }
+}
