@@ -31,7 +31,7 @@
                 type="text"
                 @keypress.enter="sendReply"
             />
-            <button class="submit-reply">Reply</button>
+            <button class="submit-reply" @click="sendReply">Reply</button>
         </div>
         <button class="open-reply" :class="{ replying }" @click="openReply">
             Reply ↩
