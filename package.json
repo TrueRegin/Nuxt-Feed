@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A template for creating deployment ready websites",
   "main": "run.ts",
+  "author": "TrueRegin",
   "license": "MIT",
   "private": true,
   "scripts": {
