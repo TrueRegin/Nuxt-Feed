@@ -87,7 +87,7 @@ export default class extends Vue {
     padding-left: 20px;
     font-size: 3rem;
     font-family: Dosis;
-    color: var(--secondary);
+    color: var(--title);
     background: var(--tertiary);
     user-select: none;
     cursor: pointer;

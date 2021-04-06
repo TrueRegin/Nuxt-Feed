@@ -88,10 +88,13 @@ export default class extends Vue {
 </script>
 
 <style lang="scss">
+@import '~/assets/main.scss';
+
 .post-wrapper {
+    transition: background $t-bg, border $t-border;
     width: 100%;
     height: max-content;
-    background: var(--background-p);
+    background: var(--primary);
     border: 2px solid var(--border-p);
     border-radius: 5px;
     overflow: hidden;

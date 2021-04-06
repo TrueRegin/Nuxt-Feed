@@ -1,8 +1,27 @@
 <template>
-    <div id="app">
-        <Nuxt />
+    <div id="app" :class="`theme-${theme}`">
+        <ThemeButton v-model="theme" theme="default" />
+        <ThemeButton v-model="theme" theme="draconic" />
+        <ThemeButton v-model="theme" theme="radium" />
+        <ThemeButton v-model="theme" theme="argentium" />
+        <div id="content">
+            <Nuxt />
+        </div>
     </div>
 </template>
+
+<script lang="ts">
+import { Component } from 'nuxt-property-decorator'
+import Vue from 'vue'
+import ThemeButton from '~/components/ThemeButton.vue'
+
+@Component({
+    components: { ThemeButton },
+})
+export default class extends Vue {
+    theme: string = 'default'
+}
+</script>
 
 <style>
 body {
