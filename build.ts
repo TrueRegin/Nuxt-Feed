@@ -79,7 +79,7 @@ async function addPackageDotJson() {
         dependencies: serverPackageDotJson.dependencies,
         license: packageDotJson.license,
         scripts: {
-            run: config.production_commannds.run + " " + config.build.server_start_path_from_container
+            start: config.production_commannds.run + " " + config.build.server_start_path_from_container
         }
     };
     await addFileInDist('package.json', JSON.stringify(newPackageDotJson));

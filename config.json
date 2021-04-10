@@ -7,7 +7,7 @@
         "client_location_in_server": "./client",
         "client_location_in_dist": "",
         
-        "server_start_path_from_container": "./server/src/main",
+        "server_start_path_from_container": "./app/server/src/main",
         "distribution_dir": "./dist",
         "static_files": ["node_modules", "yarn.lock", ".env"],
         "server_files_to_copy": []
