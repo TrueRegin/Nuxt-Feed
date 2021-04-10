@@ -102,6 +102,10 @@ export default class extends Vue {
     gap: 20px;
     background: var(--secondary);
     color: var(--color);
+    & > * {
+        outline: none;
+        appearance: none;
+    }
 
     h1 {
         font-size: 2rem;
