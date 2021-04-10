@@ -33,8 +33,6 @@ const nuxt_config: NuxtConfig = {
     buildModules: [
         // https://go.nuxtjs.dev/typescript
         '@nuxt/typescript-build',
-        // https://go.nuxtjs.dev/tailwindcss
-        '@nuxtjs/tailwindcss',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
