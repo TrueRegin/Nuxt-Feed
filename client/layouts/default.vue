@@ -1,9 +1,11 @@
 <template>
     <div id="app" :class="`theme-${theme}`">
-        <ThemeButton v-model="theme" theme="default" />
-        <ThemeButton v-model="theme" theme="draconic" />
-        <ThemeButton v-model="theme" theme="radium" />
-        <ThemeButton v-model="theme" theme="argentium" />
+        <div id="theme-buttons">
+            <ThemeButton v-model="theme" theme="default" />
+            <ThemeButton v-model="theme" theme="draconic" />
+            <ThemeButton v-model="theme" theme="radium" />
+            <ThemeButton v-model="theme" theme="argentium" />
+        </div>
         <div id="content">
             <Nuxt />
         </div>
@@ -45,11 +47,18 @@ body,
 #__layout,
 #app {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
 #app {
     background: var(--background);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+#content {
+    overflow-y: auto;
+    height: 100%;
 }
 </style>
